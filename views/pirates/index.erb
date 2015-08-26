@@ -1,0 +1,14 @@
+<table class='table table-striped'>
+  <% @pirates.each do |pirate| %>
+    <tr>
+      <td>
+        <a href="/pirates/<%= pirate.id %>">
+          <%= pirate.name %>
+        </a>
+      </td>
+      <td><%= pirate.name %></td>
+      <td><%= pirate.weight %></td>
+      <td><%= pirate.height %></td>
+    </tr>
+  <% end %>
+</table>
